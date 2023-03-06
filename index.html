@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .fargeAlternativ {
+            height: 100px;
+            width: 100px;
+            border-style: solid;
+
+        }
+    </style>
+    <style>
+        .grid-container {
+
+            display: inline-grid;
+            grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+            margin: 0;
+
+
+        }
+
+        .grid-item {
+            background-color: rgba(252, 250, 250, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+
+
+</head>
+
+<body onload="myFunction()">
+
+
+
+    <img id="farge1" onclick="farge1(this)" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde1.png"
+        class="fargeAlternativ">
+    <img id="farge2" onclick="farge2()" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde2.png"
+        class="fargeAlternativ">
+    <img id="farge3" onclick="farge3()" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde3.png"
+        class="fargeAlternativ">
+    <img id="farge4" onclick="farge4()" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde4.png"
+        class="fargeAlternativ">
+    <img id="farge5" onclick="farge5()" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde5.png"
+        class="fargeAlternativ">
+    <img id="farge6" onclick="farge6()" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png"
+        class="fargeAlternativ">
+    <br>
+    <p>Valgt Farge</p>
+    <img id="valgtfarge1" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png"
+        class="fargeAlternativ">
+    <br>
+    <button onclick="testfun()">knapp</button>
+    <div id="test1">(tom)</div>
+    <h1>"The value for number is: " <span id="myText"></span></h1>
+    <script>
+        
+
+        /*function malingigrid(clicked_id) {
+            
+            var tallb;
+            tallb = 1;
+            if (tallb === 1) {
+                return document.getElementById('clicked_id');
+                img55.src = 'fargebilde1.png';
+            } 
+            if (tallb === 2){
+                return document.getElementById(clicked_id);
+                img55.src = 'fargebilde2.png';
+               
+            }
+
+
+
+        }*/
+        
+    </script>
+    <script>
+    
+        
+
+
+        
+    
+    </script> 
+
+    <div id="image-grid" class="grid-container">
+        <div class="grid-item">
+            <img onclick="malingigrid(this.id)" id="grid1"
+                src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid2" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid3" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid4" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid5" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid6" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid7" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid8" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid9" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid10" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid11" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid12" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid13" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid14" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid15" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid16" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid17" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid18" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid19" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid20" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid21" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid22" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid23" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid24" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid25" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid26" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid27" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid28" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid29" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid30" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid31" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid32" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid33" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid34" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid35" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid36" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid37" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid38" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid39" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid40" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid41" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid42" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid43" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid44" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid45" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid46" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid47" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid48" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid49" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid50" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid51" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid52" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid53" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid54" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid55" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid56" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid57" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid58" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid59" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid60" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid61" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid62" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid63" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid64" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid65" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid66" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid67" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid68" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid69" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid70" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid71" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid72" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid73" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid74" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid75" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid76" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid77" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid78" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid79" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid80" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid81" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid82" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid83" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid84" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid85" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid86" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid87" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid88" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid89" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid90" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid91" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid92" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid93" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid94" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid95" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid96" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid97" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid98" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid99" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid100" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid101" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid102" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid103" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid104" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid105" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid106" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid107" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid108" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid109" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid110" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid111" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid112" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid113" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid114" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid115" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid116" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid117" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid118" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid119" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid120" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid121" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid122" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid123" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid124" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid125" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid126" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid127" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid128" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid129" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid130" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid131" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid132" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid133" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid134" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid135" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid136" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid137" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid138" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid139" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid140" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid141" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid142" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid143" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+        <div class="grid-item">
+            <img id="grid144" src="C:\Users\genga\Desktop\github repository\fargebillder1-4\fargebilde6.png">
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="C:\Users\genga\Desktop\getacademy visual studio\javas.js"></script>
